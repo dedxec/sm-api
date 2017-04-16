@@ -8,12 +8,12 @@ const requireAuth = passport.authenticate('jwt',{ session : false });
 const requireSignIn=passport.authenticate('local',{ session : false });
 
 module.exports= function(app) {
-    /*app.get('/',function (req,res) {
+    app.get('/',function (req,res) {
         res.send("taranjeets singh");
     });
     app.get('/any',requireAuth,function(req,res) {
         res.send({"hi":"there"});
-    });*/
+    });
     app.post('/signup',Authentication.signup);
     app.post('/signin',requireSignIn,Authentication.signin);
 }
