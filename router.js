@@ -1,3 +1,4 @@
+/*
 const Authentication = require('./controllers/authentication');
 const passportService = require('./services/passport');
 const passport = require('passport');
@@ -16,4 +17,4 @@ module.exports= function(app) {
     });
     app.post('/signup',Authentication.signup);
     app.post('/signin',requireSignIn,Authentication.signin);
-}
+}*/
