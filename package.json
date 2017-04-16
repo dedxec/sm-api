@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "postinstall":"webpack -p"
+    "postinstall": "webpack -p"
   },
   "author": "Taranjeet Singh",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
@@ -22,6 +24,6 @@
     "passport": "^0.3.2",
     "passport-jwt": "^2.1.0",
     "passport-local": "^1.0.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.15.0"
   }
 }
