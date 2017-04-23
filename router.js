@@ -9,7 +9,7 @@ const requireSignIn=passport.authenticate('local',{ session : false });
 
 module.exports= function(app) {
     app.get('/',function (req,res) {
-        res.send("taranjeets singh");
+        res.send("taranjeet singh");
     });
     app.get('/any',requireAuth,function(req,res) {
         res.send({"hi":"there"});
